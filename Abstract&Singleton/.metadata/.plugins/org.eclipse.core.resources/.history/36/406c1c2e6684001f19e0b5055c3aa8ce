@@ -1,0 +1,13 @@
+package Abstract_factory;
+
+public interface VictorianFurniture {
+	public default Chair createChair() {
+		return new ModernChair();
+	}
+	public default Table createTable() {
+		return new ModernTable();
+	}
+	public default Sofa createSofa() {
+		return new ModernSofa();
+	}
+}

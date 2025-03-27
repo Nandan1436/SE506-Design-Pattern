@@ -1,0 +1,18 @@
+package Abstract_factory;
+
+public class main {
+
+	public static void main(String[] args) {
+		FurnitureFactory modernFactory = new ModernFurniture();
+		Chair modernChair=modernFactory.createChair();
+		Table modernTable=modernFactory.createTable();
+		
+		FurnitureFactory rusticFactory = new RusticFurniture();
+		Sofa rusticSofa=rusticFactory.createSofa();
+
+		modernChair.sitOnChair();
+		modernTable.placeItems();
+		rusticSofa.sitOnSofa();
+	}
+
+}

@@ -1,0 +1,7 @@
+package Abstract_factory;
+
+public interface ModernFurniture {
+	public default Chair createChair() {
+		return new ModernChair();
+	}
+}

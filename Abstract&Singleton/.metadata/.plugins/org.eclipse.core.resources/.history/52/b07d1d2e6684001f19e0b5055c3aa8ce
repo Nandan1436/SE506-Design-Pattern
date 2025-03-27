@@ -1,0 +1,13 @@
+package Abstract_factory;
+
+public interface RusticFurniture {
+	public default Chair createChair() {
+		return new RusticChair();
+	}
+	public default Table createTable() {
+		return new RusticTable();
+	}
+	public default Sofa createSofa() {
+		return new RusticSofa();
+	}
+}
